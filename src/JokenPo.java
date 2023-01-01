@@ -4,6 +4,11 @@ public record JokenPo(
         int rounds
 ) {
 
+     public void toPlay(){
+          System.out.println("\n******* Welcome, " + user.getName() + " *******\n");
+     }
 
+     private int choiceUser(){
 
+     }
 }

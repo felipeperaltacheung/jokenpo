@@ -10,12 +10,17 @@ public class Main {
         String playerName = sc.next().toUpperCase();
 
         Player user = new Player(playerName); // instanciado o objeto capturado do sc.next
+        Player IA = new Player("IA");
 
-        Player IA = new Player(IA);
+        System.out.print(playerName + ", informe quantos rounds você deseja jogar: ");
+        int rounds = sc.nextInt();
+
+        return new JokenPo(user, IA, rounds);
 
     }
 
     public static void main(String[] args) {
-        System.out.println("A");
+        JokenPo jokenPo = startGame();
+        jokenPo.toPlay();
     }
 }
