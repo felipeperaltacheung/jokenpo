@@ -8,6 +8,10 @@ public class Player {
         this.score = 0;
     }
 
+    public void incrementScore(){
+        setScore(getScore() + 1);
+    }
+
     public String getName() {
         return name;
     }

@@ -9,10 +9,12 @@ public record JokenPo(
 
      public void toPlay() {
           System.out.println("\n******* Welcome, " + user.getName() + " *******\n");
+
           int choiceUser = choiceUser();
           if(choiceUser < 1 || choiceUser >3){
                System.out.println("\n INVALID MOVE! (1, 2 or 3): ");
                System.out.println("\tPOINT TO " + IA.getName() + "\n");
+               IA.incrementScore();
           }
 
 
