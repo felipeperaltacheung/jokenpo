@@ -22,5 +22,6 @@ public class Main {
     public static void main(String[] args) {
         JokenPo jokenPo = startGame();
         jokenPo.toPlay();
+        jokenPo.showFinalResult();
     }
 }
